@@ -1,0 +1,8 @@
+/* Computer CSS */
+body {
+    font-size: 16px;
+    margin: 0 10%;
+}
+nav ul li {
+    margin-right: 15px;
+}

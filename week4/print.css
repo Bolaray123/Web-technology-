@@ -1,0 +1,8 @@
+/* Print CSS */
+body {
+    font-family: Times New Roman, serif;
+    color: #000;
+}
+nav {
+    display: none;
+}
