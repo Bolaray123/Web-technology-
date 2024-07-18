@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Cloning Project 2 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+       <div class="circle"></div>
+        <!-- MY HEADER SECTION CODE HERE  -->
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+
+<!-- This is for my main content -->
+        <div class="content">
+            <div class="textBox">
+                <h2>This is not <br>ordinary coffee.It's <br><span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt commodi, dolorum
+                    exercitationem iusto nostrum modi cumque velit atque? Quasi reiciendis necessitatibus incidunt
+                    recusandae molestiae facilis dolor doloribus dolorem voluptatem!</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <!-- For Main BIG STARBUCKS Image -->
+          <div class="imgBox">
+               <img src="images/img1.png" class="starbucks" >
+          </div>
+        </div>
+
+           <!-- THIS IS MY THUMBNAIL CODE -->
+              
+           <!-- li*4>img -->
+       <ul class="thumb">
+         <li><img src="images/thumb1.png" onclick="imgSlide('images/img1.png');changeclr('#017143'); " ></li>
+         <li><img src="images/thumb2.png" onclick="imgSlide('images/img2.png');changeclr('#eb7495'); "></li>
+         <li><img src="images/thumb3.png" onclick="imgSlide('images/img3.png');changeclr('#d752b1'); "></li>
+       </ul>
+
+<!-- THIS IS SOCIAL MEDIA ICONS CODE  -->
+<ul class="socialmedia">
+    <li><a href="#"><img src="images/facebook.png" ></a></li>
+    <li><a href="#"><img src="images/twitter.png" ></a></li>
+    <li><a href="#"><img src="images/instagram.png" ></a></li>
+  </ul>
+
+    </section>
+<!-- Internal JS - that is one way ; the external is by creating a file -->
+<script >
+// src="main.js" - that is if it is internal
+// JS wants camil write function call , camel case function names 
+//This function is for big image change 
+function imgSlide(anything){
+    document.querySelector('.starbucks').src=anything; 
+}
+// This is for circle color change 
+function changeclr(color){
+    const circle=document.querySelector('.circle')
+    circle.style.background=color;
+}
+</script>
+
+</body>
