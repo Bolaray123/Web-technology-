@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>England Map</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <body>
+        <div class="map-container">
+            <div class="map-background">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" id="uk-map">
+                    <!-- England -->
+                    <path id="england" d="M400,300 L500,300 L500,400 L400,400 Z" />
+                    <!-- Scotland -->
+                    <path id="scotland" d="M400,100 L500,100 L500,200 L400,200 Z" />
+                    <!-- Wales -->
+                    <path id="wales" d="M200,300 L300,300 L300,400 L200,400 Z" />
+                    <!-- Northern Ireland -->
+                    <path id="ni" d="M100,100 L200,100 L200,200 L100,200 Z" />
+                </svg>
+            </div>
+            <div id="tooltip" class="tooltip"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+  </body>
+</html>
