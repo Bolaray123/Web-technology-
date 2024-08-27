@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Staff List</title>
+</head>
+<body>
+    <h1>Staff Members</h1>
+    <% results.forEach(row => { %>
+        <p><strong>Name: </strong> <%= row.name %><br>
+        <strong>Department: </strong> <%= row.department %></p>
+    <% }); %>
+</body>
+</html>
