@@ -34,12 +34,17 @@ db.serialize(() => {
 
 db.serialize(() => {
     // Insert sample areas
-    db.run(`INSERT INTO Areas (name, description) VALUES ('Splash Zone', 'Water slides and wave pools')`);
-    db.run(`INSERT INTO Areas (name, description) VALUES ('Lazy River', 'Relaxing float through the park')`);
+    db.run(`INSERT INTO Areas (name, description) VALUES ('Pool Side', 'Relax by the sparkling poolside, where the sun shines bright, and the fun never stops. Unwind on comfy loungers or take a refreshing dip in crystal-clear waters.')`);
+    db.run(`INSERT INTO Areas (name, description) VALUES ('Waterslides', 'Feel the thrill as you zip down our exhilarating waterslides, designed for fun-seekers of all ages. Experience the ultimate splash and excitement at every twist and turn.')`);
+    db.run(`INSERT INTO Areas (name, description) VALUES ('River Rides', 'Embark on a scenic adventure with our gentle river rides. Drift through winding waterways surrounded by lush greenery, perfect for a peaceful escape or a family journey.')`);
   
     // Insert sample rides
-    db.run(`INSERT INTO Attractions (name, description, area_id) VALUES ('Giant Slide', 'A thrilling high-speed water slide', 1)`);
-    db.run(`INSERT INTO Attractions (name, description, area_id) VALUES ('Wave Pool', 'An ocean-like experience with waves', 1)`);
+    db.run(`INSERT INTO Attractions (name, description, area_id) VALUES ('Roller Coaster', 'Get ready for heart-pounding drops and high-speed thrills on our roller coaster!', 001)`);
+    db.run(`INSERT INTO Attractions (name, description, area_id) VALUES ('Courosel', 'Enjoy a classic ride on our charming, beautifully crafted carousel.', 002)`);
+    db.run(`INSERT INTO Attractions (name, description, area_id) VALUES ('Arcade Game', 'Challenge your friends with fun and exciting arcade games for all ages!', 003)`);
+    db.run(`INSERT INTO Attractions (name, description, area_id) VALUES ('Hanging Courosel', 'Enjoy a classic ride on our charming, beautifully crafted carousel.', 003)`);
+
+    
   });
 
   

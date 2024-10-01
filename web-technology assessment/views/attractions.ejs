@@ -52,11 +52,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="areas.html" class="nav-item nav-link">Areas</a>
-                        <a href="attraction.html" class="nav-item nav-link">Attractions</a>
-                        <a href="faq.html" class="nav-item nav-link">FAQ</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="/" class="nav-item nav-link">Home</a>
+                        <a href="/areas" class="nav-item nav-link">Areas</a>
+                        <a href="/attractions" class="nav-item nav-link">Attractions</a>
+                        <a href="/faq" class="nav-item nav-link">FAQ</a>
+                        <a href="/contact" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="team-icon d-none d-xl-flex justify-content-center me-3">
                         <a class="btn btn-square btn-light rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -75,7 +75,7 @@
             <div class="container text-center py-5" style="max-width: 900px;">
                 <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Attractions</h4>
                 <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
                     <li class="breadcrumb-item active text-primary">Attractions</li>
                 </ol>    
@@ -89,29 +89,29 @@
                 <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
                     <h4 class="text-primary">Attractions</h4>
                     <h1 class="display-5 text-white mb-4">Explore WaterLand Park Attractions</h1>
-                    <p class="text-white mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    <p class="text-white mb-0">Get ready for heart-pounding drops and high-speed thrills on our roller coaster! Enjoy a classic ride on our charming, beautifully crafted carousel. Challenge your friends with fun and exciting arcade games for all ages!
                     </p>
                 </div>
                 <div class="owl-carousel attractions-carousel wow fadeInUp" data-wow-delay="0.1s">
                     <div class="attractions-item wow fadeInUp" data-wow-delay="0.2s">
                         <img src="img/attraction-1.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Roller Coaster</a>
+                        <a href="#" class="attractions-name"><%= rollerCoaster.name %></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="0.4s">
                         <img src="img/attraction-2.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Carousel</a>
+                        <a href="#" class="attractions-name"><%= courosel.name %></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="0.6s">
                         <img src="img/attraction-3.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Arcade Game</a>
+                        <a href="#" class="attractions-name"><%= arcadeGame.name %></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="0.8s">
                         <img src="img/attraction-4.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Hanging Carousel</a>
+                        <a href="#" class="attractions-name"><%= hangCourosel.name %></a>
                     </div>
                     <div class="attractions-item wow fadeInUp" data-wow-delay="1s">
                         <img src="img/attraction-2.jpg" class="img-fluid rounded w-100" alt="">
-                        <a href="#" class="attractions-name">Carousel</a>
+                        <a href="#" class="attractions-name"><%= courosel.name %></a>
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
-                            <a href="index.html" class="p-0">
+                            <a href="/" class="p-0">
                                 <h4 class="text-white mb-4"><i class="fas fa-swimmer text-primary me-3"></i>WaterLand</h4>
                                 <!-- <img src="img/logo.png" alt="Logo"> -->
                             </a>
